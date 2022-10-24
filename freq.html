@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var count=0; 
+        var item;
+        const arr1=[3,'6','5','a',6,6,6,6,'b','b','b','b',6,6,66,6];
+        for(var i=0;i<arr1.length;i++){
+            var a=0;
+            for(var j=0;j<arr1.length;j++)
+            {
+                if(arr1[i]===arr1[j]){
+                        a++;
+
+                }
+            }
+            if(count<a){
+            count=a;
+            item=arr1[i];
+            }
+        }
+            document.write("frequency of "+ item +" is "+count );
+    </script>
+</body>
+</html>

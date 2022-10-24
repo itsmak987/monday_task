@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <script>
+            const str="the quick brown fox";
+            const arr=str.split("");
+            for(var i=0;i<arr.length;i++){
+                if(i==0)
+                    arr[0]=arr[0].toUpperCase();
+                if(arr[i]==" ")
+                arr[i+1]=arr[i+1].toUpperCase();
+
+            }
+            let text = arr.join("");
+            document.write(text);
+        </script>
+    </body>
+</html>
